@@ -12,7 +12,7 @@
 namespace SC\DatetimepickerBundle\Twig\Extension;
 
 use Symfony\Component\Form\FormView;
-use Symfony\Component\Form\FormRendererEngineInterface;
+use Symfony\Component\Form\FormRendererInterface;
 
 /**
  * FormExtension extends Twig with form capabilities.
@@ -29,7 +29,7 @@ class FormExtension extends \Twig_Extension
      */
     public $renderer;
 
-    public function __construct(FormRendererEngineInterface $renderer)
+    public function __construct(FormRendererInterface $renderer)
     {
         $this->renderer = $renderer;
     }
